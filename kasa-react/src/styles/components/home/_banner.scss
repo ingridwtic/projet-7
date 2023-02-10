@@ -1,0 +1,50 @@
+.banner {
+width: auto;
+margin: 2%;
+position: relative;
+.banner_text {
+
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: $color-2;
+    font-size: 48px;;    
+
+}
+
+}
+
+    .banner_img {
+        margin-top: 0%;
+        border-radius: 25px;
+        width: 98%;
+        height: 223px;
+        object-fit: cover;
+        mix-blend-mode: darken;
+        filter: brightness(0.60);
+        
+    
+    }
+
+    @media screen and (max-width:600px){
+        .banner{
+            .banner_text{
+                top: 30%;
+                left: 9%;
+                width: 185px ;
+                display: flex;
+                justify-content: center;
+                text-align: start;
+                align-items: flex-start;
+                position: absolute;
+                font-size:24px;
+
+            }
+        }
+        
+    }
