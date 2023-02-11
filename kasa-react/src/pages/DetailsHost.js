@@ -50,8 +50,10 @@ const DetailsHost = () => {
           </div>
         </div>
         <div className="detailsHost__dropdowns">
-          <Collapse title="description" content={description} />
-          <Collapse title="équipement" content={equipments} />
+          <div className="detailsHost__dropdowns">
+            <Collapse title="description" content={description} />
+            <Collapse title="équipement" content={equipments} />
+          </div>
         </div>
       </div>
       <Footer />
