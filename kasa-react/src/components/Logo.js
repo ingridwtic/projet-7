@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
+import LOGO from "../assets/images/LOGO.png";
 
 const Logo = () => {
-    return (
+  return (
     <div className="logo">
-        <img src="./LOGO.png" alt="logo kasa" />
+      <img src={LOGO} alt="logo kasa" />
     </div>
-
-
-    );
+  );
 };
 
 export default Logo;

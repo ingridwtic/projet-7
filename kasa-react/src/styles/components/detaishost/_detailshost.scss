@@ -23,5 +23,8 @@
         margin-bottom: 20px;
         display: flex;
         justify-content: space-between;
-    }  
+    }
+    &__dropdowns  {
+        color:$color-1;
+    }
 }

@@ -9,7 +9,7 @@ ul {
     margin: 30px;
 }
 li {
-    font-size: 20px;
+    font-size: 24px;
     transition: 0.2s;
     cursor: pointer;
 
@@ -22,8 +22,8 @@ li {
 a{
     display: flex;
     margin: 1%;
-    height: 34px;
-    width: 120px;
+    height: auto;
+    width: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@ a{
     }
 }
 
-@media screen and (max-width:426px){
+@media screen and (max-width:760px){
 
     li{
         font-size: 12px;
@@ -74,8 +74,8 @@ a{
         a {
             margin: 1%;
             height: 34px;
-            width: 75px;
-            font-size: 12px;
+            width: auto;
+            
         }
     }
     .nav-active {

@@ -1,44 +1,21 @@
-.tag {
-    width:100%;
-    margin: 2%;
-    
-    
-    }
-    
-        .tag_img {
-            margin-top: 0%;
-            border-radius: 25px;
-            width: 96%;
-            height: 415px;
-            mix-blend-mode: darken;
-            filter: brightness(0.60);
+
+    .tag {
+        background: $color-1;
+        border-radius: 5px;
+        color: $color-3;
+        padding: 3px 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        min-width: 68px;
+        text-align: center;
+        &__text {
+            margin: 0;
+            font-size: 10px;
+            font-weight: 500;
             
-        
         }
-        @media screen and (max-width:426px){
-.tag{
-    margin-top: 0%;
-    .tag_img{
-        margin-top: 0%;
-        height: 255px;
-    }
+            
 }
-
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

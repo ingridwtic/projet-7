@@ -1,6 +1,6 @@
 .Logement{
-  margin-left: 2%;
-  margin-right: 3%;
+  
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   height: 829px;
@@ -8,17 +8,23 @@
   height: 2600px;
   background-color: $color-2;
   border-radius: 25px;
+  flex-wrap: wrap;
+  width: 1240px;
+  
 
   .Logement-list{
       display: grid;
-      width: 70%;
+      width: 950px;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      column-gap: 5%;
+      column-gap: 30px;
       row-gap: 30px;
-      justify-self: stretch;
+      margin-block: 50px;
+      justify-content: center;
       height: 100%;
       position: absolute;
+      margin-top:2%;
+      
       
   }
 }

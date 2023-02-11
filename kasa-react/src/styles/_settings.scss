@@ -26,8 +26,9 @@ $white:#ffff;
 body {
     background: $white;
     font-family:$font ;
-  // @include verticalCenter;
+    @include verticalCenter;
 }
 li {
     list-style-type: none;
 }
+
