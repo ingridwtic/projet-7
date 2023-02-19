@@ -1,0 +1,45 @@
+.server {
+    display: flex;
+    justify-content: flex-end ;
+    img{
+        border-radius: 50%;
+        height: 64px;
+        width: 64px; 
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        text-transform: uppercase;
+    }
+    &__name p {
+        font-size: 18px;
+        margin: 0;
+        text-align: end;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .server {
+        display: flex;
+        justify-content: flex-end ;
+        img{
+            border-radius: 50%;
+            height: 32px;
+            width: 32px; 
+        }
+    
+        &__name {
+            font-size: 12px;
+            text-transform: lowercase;
+        }
+        &__name p {
+            font-size: 12px;
+            text-transform: lowercase;
+        }
+    
+    }
+}

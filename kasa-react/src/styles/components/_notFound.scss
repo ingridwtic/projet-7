@@ -1,44 +1,41 @@
-.notFound{
-    height: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    a{
-        margin-top: 4%;
-        width: auto;
-        font-size: 18px;
-        text-decoration: underline;
-    }
-}
-
-.notFound_number{
+.notFound {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  a {
+    margin-top: 4%;
+    width: auto;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  &__number {
     font-size: 288px;
-    color: $color-1 ;
-}
-.notFound_text{
+    color: $color-1;
+  }
+  &__text {
     height: 100%;
     font-size: 36px;
-    color:$color-1;
+    color: $color-1;
+  }
 }
 
-@media screen and (max-width:426px){
-    .notFound{
-        a{
-            font-size: 14px;
-            margin-top: 40%;
-        }
+@media screen and (max-width: 768px) {
+  .notFound {
+    a {
+      font-size: 14px;
+      margin-top: 40%;
     }
-    .notFound_number{
-        font-size: 96px;
-        margin-top: 50%;
+    &__number {
+      font-size: 96px;
+      margin-top: 50%;
     }
-    .notFound_text{
-        font-size: 18px;
-        width: 260px;
-        height: 52px;
-        font-weight: 500;
-        
-
+    &__text {
+      font-size: 18px;
+      width: 260px;
+      height: 52px;
+      font-weight: 500;
     }
+  }
 }

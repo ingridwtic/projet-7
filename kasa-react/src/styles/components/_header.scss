@@ -1,8 +1,12 @@
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1240px;
-    flex-wrap: wrap;
-    
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+  margin-block: 20px;
+  padding-inline: 20px;
+  max-width: 1280px;
+  height: 68px;
+  font-weight: 500;
+  width: 100%;
 }

@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer">
-      <img className="footer_logo" src="/LOGO_footer.png" alt="logo kasa" />
-      <p className="footer_p"> © 2020 kasa.All rights reserved</p>
-    </div>
+    <footer className="footer">
+      <img className="footer__logo" src="/LOGO_footer.png" alt="logo kasa" />
+      <p className="footer__text">© 2020 kasa. All rights reserved</p>
+    </footer>
   );
 };
 

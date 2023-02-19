@@ -1,0 +1,21 @@
+.tag {
+  background: $color-1;
+  border-radius: 10px;
+  color: $white;
+  padding: 5px 40px;
+  text-align: center;
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tag {
+    padding: 5px 20px;
+    &__text {
+      font-size: 10px;
+    }
+  }
+}

@@ -1,18 +1,9 @@
-.about_img {
-    width: auto;
-    margin: 2%;
-    
-    
-    }
-    
-        .about_img {
-            margin-top: 0%;
-            border-radius: 25px;
-            width: 96%;
-            height: 223px;
-            object-fit: cover;
-            mix-blend-mode: darken;
-            filter: brightness(0.60);
-            
-        
-        }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-block: 30px;
+  margin-inline: auto;
+  justify-content: center;
+  max-width: 1024px;
+}

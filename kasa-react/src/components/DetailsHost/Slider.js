@@ -11,6 +11,9 @@ const Slider = ({ slides }) => {
   };
   return (
     <div className="slider">
+      {/**
+        .map parcour les photos et créer les éléments HTML relatif pour chacune d'elle
+       */}
       {slides &&
         slides.map((pictures, index) => {
           return (
@@ -22,12 +25,19 @@ const Slider = ({ slides }) => {
                   : "slide slider__inactive-picture"
               }
             >
+              {/**
+               * Affichage de la photo si l'index correspond au current / la photo affichée
+               */}
               {index === current && (
                 <img src={pictures} alt="" className="slider__picture" />
               )}
             </div>
           );
         })}
+      {/**
+       * Vérification de la longueur, permet de na pas afficher les flèches si il n'y a qu'une photo
+       * Utilisation des fonctions prevSlide et nextSlide déclarées en amont sur le clique
+       */}
       {slides.length > 1 && (
         <>
           <div className="slider__previous" onClick={prevSlide}>
@@ -58,6 +68,9 @@ const Slider = ({ slides }) => {
               />
             </svg>
           </div>
+          <span className="slider__pagination">
+            {current + 1}/{slides.length}
+          </span>
         </>
       )}
     </div>

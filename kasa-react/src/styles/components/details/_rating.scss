@@ -1,10 +1,14 @@
 .rating {
     display: flex;
     align-items: center;
+    
 
     &__icon {
         margin-right: 5px;
         height: 24px;
+        flex-direction: column;
     }
 
 }
+
+

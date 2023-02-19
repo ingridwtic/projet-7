@@ -1,68 +1,26 @@
-.Logement{
-  
-  margin-top: 3%;
-  display: flex;
-  justify-content: center;
-  height: 829px;
-  margin-bottom: 4%;
-  height: 2600px;
-  background-color: $color-2;
+.logement {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 60px;
   border-radius: 25px;
-  flex-wrap: wrap;
-  width: 1240px;
-  
+  background: $color-2;
+  margin-block: 50px;
+  padding: 50px;
+}
 
-  .Logement-list{
-      display: grid;
-      width: 950px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
-      column-gap: 30px;
-      row-gap: 30px;
-      margin-block: 50px;
-      justify-content: center;
-      height: 100%;
-      position: absolute;
-      margin-top:2%;
-      
-      
+@media screen and (max-width: 990px) {
+  .logement {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (min-width:250px) and (max-width:600px){
-  .Logement{
-      display: flex;
-      justify-content: center;
-      width: auto;
-      height: 5700px;
-      margin-top: 10px;
-      flex-wrap: wrap;
-      .Logement-list{
-          margin-top: 10px;
-          width: 95%;
-          flex-direction: column;
-          grid-template-columns: 1fr;
-          flex-wrap: wrap;
-
-      }
-  }
-}
-
-@media screen and (min-width:730px) and ( max-width:1430px){
-  .Logement{
-      display: flex;
-      justify-content: center;
-      width: auto;
-      height: 5700px;
-      margin-top: 10px;
-      flex-wrap: wrap;
-      .Logement-list{
-          margin-top: 10px;
-          width: 95%;
-          flex-direction: column;
-          grid-template-columns:1fr 1fr; 
-          flex-wrap: wrap;
-
-      }
+@media screen and (max-width: 768px) {
+  .logement {
+    grid-template-columns: repeat(1, 1fr);
+    background: none;
+    grid-gap: 20px;
+    padding: 0;
+    margin-block: 20px;
   }
 }

@@ -1,6 +1,7 @@
 @import "./settings";
 @import "./components/navigation";
 @import "./components/logo";
+@import "./components/header";
 @import "./components/footer";
 @import "./components/notFound";
 @import "./components/card";
@@ -8,13 +9,8 @@
 @import "./components/home/banner";
 @import "./components/about/about";
 @import "./components/collapse";
-@import "./components/detaishost/tag";
-@import "./components/detaishost/rating";
-@import "./components/detaishost/server";
-@import "./components/detaishost/slider";
-@import "./components/detaishost/detailshost";
-
-
-
-
-
+@import "./components/details/tag";
+@import "./components/details/rating";
+@import "./components/details/author";
+@import "./components/details/slider";
+@import "./components/details/details";

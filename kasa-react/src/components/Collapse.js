@@ -1,23 +1,22 @@
 import React, { useState } from "react";
 import Vector from "../assets/images/Vector.png";
 
-const Collapse = ({ title, content }) => {
-  /* Crée un Hook d'état */
+const Collapse = ({ title, children }) => {
   const [open, setOpen] = useState(false);
 
   return (
     <div className="collapse" id={`collapse-${title}`}>
-      <div className="main-collapse">
-        <div className="title-collapse">{title}</div>
-        <p className={`fleche-collapse ${open}`} onClick={() => setOpen(!open)}>
+      <div className="collapse__main">
+        <h2 className="collapse__title">{title}</h2>
+        <p
+          className={`collapse__fleche ${open}`}
+          onClick={() => setOpen(!open)}
+        >
           <img src={Vector} alt="menu déroulant" />
         </p>
       </div>
 
-      {
-        /* Si le dropdown est à TRUE alors il affichera la description */
-        open && <div className="description-collapse">{content}</div>
-      }
+      {open && <div className="collapse__description">{children}</div>}
     </div>
   );
 };

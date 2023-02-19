@@ -1,6 +1,6 @@
 import React from "react";
 
-const Server = ({ host }) => {
+const Author = ({ host }) => {
   const isHostSplited = host.name.split(" ");
   const [name, lastname] = isHostSplited;
 
@@ -15,4 +15,4 @@ const Server = ({ host }) => {
   );
 };
 
-export default Server;
+export default Author;
