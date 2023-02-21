@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Tags from "../components/DetailsHost/Tags";
 import Collapse from "../components/Collapse";
 import Rating from "../components/DetailsHost/Rating";
@@ -9,7 +9,7 @@ import Slider from "../components/DetailsHost/Slider";
 const Details = () => {
   const [data, setData] = useState({});
   const { id } = useParams();
-
+  const Navigate = useNavigate();
   useEffect(() => {
     async function fetchData() {
       await fetch("../kasa.json")
@@ -17,11 +17,12 @@ const Details = () => {
         .then((datas) => {
           const detailsFound = datas.find((data) => data.id === id);
           setData(detailsFound);
+          if (detailsFound === undefined) Navigate("/error");
         })
-        .catch((error) => console.error(error));
+        .catch(() => Navigate("/error"));
     }
     fetchData();
-  }, [id]);
+  }, [id, Navigate]);
 
   const { title, location, rating, host, equipments, description, pictures } =
     data;

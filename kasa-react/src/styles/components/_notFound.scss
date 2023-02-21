@@ -19,6 +19,9 @@
     font-size: 36px;
     color: $color-1;
   }
+  &__link {
+    color: $color-1;
+  }
 }
 
 @media screen and (max-width: 768px) {

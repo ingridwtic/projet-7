@@ -5,9 +5,10 @@ const Rating = ({ rating }) => {
 
   return (
     <div className="rating">
-      {stars.map((star) =>
+      {stars.map((star, index) =>
         rating >= star ? (
           <svg
+            key={index}
             width="30"
             height="30"
             viewBox="0 0 30 30"
@@ -21,6 +22,7 @@ const Rating = ({ rating }) => {
           </svg>
         ) : (
           <svg
+            key={index}
             width="30"
             height="30"
             viewBox="0 0 30 30"
